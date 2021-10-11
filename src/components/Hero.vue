@@ -28,8 +28,6 @@ export default {
 
         h2 {
             color: $highlighted-text;
-            font-size: 3.75rem;
-            font-family: 'Caveat', cursive;
         }
         
         h3 {

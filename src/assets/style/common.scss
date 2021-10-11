@@ -44,7 +44,28 @@ ul {
     border-bottom-right-radius: 5px;
 }
 
+.btn {
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+}
+
+.btn_green {
+    background-color: #3da698;
+}
+
+.btn_green:hover {
+    background-color: #027986;
+}
 // typo
+h2 {
+    font-size: 3.75rem;
+    font-family: 'Caveat', cursive;
+}
+
 .small_text {
     font-size: 10px;
 }
+
