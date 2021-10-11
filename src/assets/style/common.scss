@@ -1,7 +1,7 @@
 // fontawesome
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
 //google fonts
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shadows+Into+Light&display=swap');
 
 // reset
 * {
@@ -62,7 +62,8 @@ ul {
 // typo
 h2 {
     font-size: 3.75rem;
-    font-family: 'Caveat', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-style: italic;
 }
 
 .small_text {
