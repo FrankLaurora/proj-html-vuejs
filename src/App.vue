@@ -4,6 +4,7 @@
     <About />
     <Audiobook />
     <Reviews />
+    <Events />
 
   </div>
 </template>
@@ -12,7 +13,8 @@
 import HeaderHeroBox from './components/HeaderHeroBox.vue'
 import About from './components/About.vue';
 import Audiobook from './components/Audiobook.vue';
-import Reviews from './components/Reviews.vue'
+import Reviews from './components/Reviews.vue';
+import Events from './components/Events.vue'
 
 
 
@@ -21,7 +23,8 @@ export default {
     HeaderHeroBox,
     About,
     Audiobook,
-    Reviews
+    Reviews,
+    Events
     }
 }
 </script>

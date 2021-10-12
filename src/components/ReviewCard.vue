@@ -69,6 +69,10 @@ export default {
                 font-size: 1.5rem;
                 margin-bottom: 1rem;
             }
+
+            p {
+                color: $gray-text;
+            }
         }
 
         .signature {

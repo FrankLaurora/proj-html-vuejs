@@ -107,6 +107,7 @@ export default {
 
                 hr {
                     margin-top: 2.5rem;
+                    border: 1px solid #575a58;
                 }
 
                 .big_text {
