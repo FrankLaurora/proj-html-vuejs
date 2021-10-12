@@ -23,6 +23,8 @@ export default {
 @import '../assets/style/variables.scss';
 
     .lg_container {
+        position: relative;
+        z-index: 1;
         height: 185px;
         font-family: 'Roboto', sans-serif;
 

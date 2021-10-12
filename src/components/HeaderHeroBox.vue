@@ -1,6 +1,6 @@
 <template>
     <div class="headerHeroBox">
-        <div class="overlay">
+        <div>
             <Header :menu="menu" />
             <Hero />
             <ShopBox />
@@ -77,12 +77,13 @@ export default {
         background-repeat: no-repeat;
         height: 800px;
 
-        .overlay {
+        &::before {
             position: absolute;
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
+            content: '';
             background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0, 0.2) 100%);
         }
     }

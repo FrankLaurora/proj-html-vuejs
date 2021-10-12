@@ -53,11 +53,20 @@ ul {
 }
 
 .btn_green {
-    background-color: #3da698;
+    background-color: #49a987;
 }
 
 .btn_green:hover {
-    background-color: #027986;
+    background-color: #357f60;
+}
+
+.btn_yellow {
+    background-color:#f4b429;
+    padding-inline: 2rem;
+}
+
+.btn_yellow:hover {
+    background-color:#f4a700;
 }
 // typo
 h2 {
@@ -68,9 +77,19 @@ h2 {
 
 p {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
 }
 
 .small_text {
     font-size: 10px;
 }
 
+// overlay
+// .overlay {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0, 0.2) 100%);
+// }

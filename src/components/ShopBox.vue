@@ -43,10 +43,7 @@ export default {
         h5 {
             text-transform: uppercase;
             color: $highlighted-text;
-        }
-
-        p {
-            line-height: 1.5rem;
+            word-spacing: 0.5rem;
         }
 
         img, .text_box, button {

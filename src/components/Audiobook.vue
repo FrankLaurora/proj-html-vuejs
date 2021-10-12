@@ -91,11 +91,11 @@ export default {
                         font-weight: 500;
                         text-align: center;
                         margin-block: 2rem;
+                        word-spacing: 0.5rem;
                     }
 
                     p {
                         color: $gray-text;
-                        line-height: 1.5rem;
                     }
                     
                     .logos {

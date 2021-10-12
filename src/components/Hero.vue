@@ -1,7 +1,7 @@
 <template>
     <div class="hero md_container">
         <div class="infobox">
-            <h2>Demon Vaughn</h2>
+            <h2>Damon Vaughn</h2>
             <h3>Best-selling author and the most influential public intellectual in the western world right now.</h3>
             <p><em>- The New York Times </em></p>
             <div class="page_turner">
@@ -21,6 +21,11 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/style/common.scss';
 @import '../assets/style/variables.scss';
+
+    .hero {
+        position: relative;
+        z-index: 1;
+    }
 
     .infobox {
         width: 50%;
