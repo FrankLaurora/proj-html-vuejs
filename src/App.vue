@@ -5,7 +5,7 @@
     <Audiobook />
     <Reviews />
     <Events />
-
+    <Subscription />
   </div>
 </template>
 
@@ -14,9 +14,8 @@ import HeaderHeroBox from './components/HeaderHeroBox.vue'
 import About from './components/About.vue';
 import Audiobook from './components/Audiobook.vue';
 import Reviews from './components/Reviews.vue';
-import Events from './components/Events.vue'
-
-
+import Events from './components/Events.vue';
+import Subscription from './components/Subscription.vue'
 
 export default {
   components: {
@@ -24,7 +23,8 @@ export default {
     About,
     Audiobook,
     Reviews,
-    Events
+    Events,
+    Subscription
     }
 }
 </script>

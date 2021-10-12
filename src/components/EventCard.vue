@@ -63,6 +63,12 @@ export default {
                 background-color: #fff;
                 padding: 36px;
 
+                h4 {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    font-family: 'Roboto', sans-serif;
+                }
+
                 hr {
                     margin-block: 1rem;
                     border: 0.5px solid #e8e8e8;
