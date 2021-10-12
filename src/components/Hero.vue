@@ -38,7 +38,7 @@ export default {
 
         p {
             font-family: 'Roboto', sans-serif;
-            color: #a3a39a;
+            color: $gray-text;
             margin-bottom: 2rem;
         }
 
