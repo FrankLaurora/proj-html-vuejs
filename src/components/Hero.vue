@@ -1,5 +1,5 @@
 <template>
-    <div class="hero md_lg_container">
+    <div class="hero md_container">
         <div class="infobox">
             <h2>Demon Vaughn</h2>
             <h3>Best-selling author and the most influential public intellectual in the western world right now.</h3>
@@ -37,7 +37,6 @@ export default {
         }
 
         p {
-            font-family: 'Roboto', sans-serif;
             color: $gray-text;
             margin-bottom: 2rem;
         }

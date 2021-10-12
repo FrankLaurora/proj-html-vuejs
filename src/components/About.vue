@@ -19,6 +19,7 @@ export default {
     .about {
         text-align: center;
         padding-block: 128px;
+        padding-inline: 80px;
 
         h2 {
             color: $highlighted-text;

@@ -32,7 +32,7 @@ export default {
         background-color: #ffffff;
         padding: 50px 70px 40px;
 
-        h5, p, button {
+        h5, button {
             font-family: 'Roboto', sans-serif;
         }
         

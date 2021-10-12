@@ -21,12 +21,8 @@
     width: 85%;
 }
 
-.md_lg_container {
-    width: 77%;
-}
-
 .md_container {
-    width: 70%;
+    width: 77%;
 }
 
 .sm_container {
@@ -68,6 +64,10 @@ h2 {
     font-size: 3.75rem;
     font-family: 'Shadows Into Light', cursive;
     font-style: italic;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
 }
 
 .small_text {
