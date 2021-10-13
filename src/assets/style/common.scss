@@ -49,8 +49,7 @@ ul {
     border: none;
     color: #fff;
     border-radius: 5px;
-    padding-block: 1rem;
-    padding-inline: 1.5rem;
+    padding: 1rem 2.5rem;
 }
 
 .btn_green {
@@ -63,7 +62,7 @@ ul {
 
 .btn_yellow {
     background-color:#f4b429;
-    padding-inline: 2rem;
+    width: 230px;
 }
 
 .btn_yellow:hover {
@@ -85,12 +84,8 @@ p {
     font-size: 10px;
 }
 
-// overlay
-// .overlay {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     right: 0;
-//     background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0, 0.2) 100%);
-// }
+// links
+a {
+    text-decoration: none;
+    color: inherit;
+}

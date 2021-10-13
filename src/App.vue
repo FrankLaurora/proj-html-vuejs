@@ -8,6 +8,7 @@
     <Subscription />
     <MoreInfo />
     <RecentArticles />
+    <Footer />
   </div>
 </template>
 
@@ -19,7 +20,8 @@ import Reviews from './components/Reviews.vue';
 import Events from './components/Events.vue';
 import Subscription from './components/Subscription.vue'
 import MoreInfo from './components/MoreInfo.vue';
-import RecentArticles from './components/RecentArticles.vue'
+import RecentArticles from './components/RecentArticles.vue';
+import Footer from './components/Footer.vue'
 
 export default {
   components: {
@@ -30,7 +32,8 @@ export default {
     Events,
     Subscription,
     MoreInfo,
-    RecentArticles
+    RecentArticles,
+    Footer
     }
 }
 </script>
@@ -39,3 +42,4 @@ export default {
 @import './assets/style/common.scss';
 
 </style>
+Footer

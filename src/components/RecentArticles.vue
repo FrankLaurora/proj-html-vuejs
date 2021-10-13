@@ -95,6 +95,7 @@ export default {
 
             img {
                 width: 100%;
+                display: block;
             }
 
             .text_box {
