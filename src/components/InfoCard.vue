@@ -1,12 +1,9 @@
 <template>
-    <div class="info_card md_container">
-        <div class="col_third" v-for="(element, index) in cardInfo" :key="index" :style="{backgroundImage: 'url(' + element.img + ')'}">
-            <div class="text_box">
-                <h3>{{element.title}}</h3>
-                <hr>
-                <p>{{element.content}}</p>
-                
-            </div>
+    <div class="col_third" :style="{backgroundImage: 'url(' + info.img + ')'}">
+        <div class="text_box">
+            <h3>{{info.title}}</h3>
+            <hr>
+            <p>{{info.content}}</p>     
         </div>
     </div>
 </template>
@@ -15,26 +12,8 @@
 export default {
     name: 'InfoCard',
 
-    data() {
-        return {
-            cardInfo: [
-                {
-                    title: 'About Me',
-                    content: 'Vestibulum ante ipsum primis',
-                    img: require('../assets/img/box-1.jpg')
-                },
-                {
-                    title: 'My Latest Book',
-                    content: 'Vestibulum ante ipsum primis',
-                    img: require('../assets/img/box-4.jpg')
-                },
-                {
-                    title: 'Book',
-                    content: 'Vestibulum ante ipsum primis',
-                    img: require('../assets/img/box-3.jpg')
-                }
-            ]
-        }
+    props: {
+        info: Object
     }
 }
 </script>
@@ -42,12 +21,6 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/style/common.scss';
 @import '../assets/style/variables.scss';
-
-    .md_container {
-        display: flex;
-        padding: 80px 60px;
-        justify-content: space-between;
-    }
 
     .col_third {
         position: relative;

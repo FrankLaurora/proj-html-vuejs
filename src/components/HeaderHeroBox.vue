@@ -23,45 +23,8 @@ export default {
         ShopBox
     },
 
-    data() {
-        return {
-            menu: [
-                {
-                    link: 'Home',
-                    active: true
-                },
-                
-                {
-                    link: 'About Me',
-                    active: false
-                },
-
-                {
-                    link: 'Testimonials',
-                    active: false
-                },
-
-                {
-                    link: 'My Blog',
-                    active: false
-                },
-
-                {
-                    link: 'Meetups',
-                    active: false
-                },
-
-                {
-                    link: 'Shop',
-                    active: false
-                },
-
-                {
-                    link: 'Contact Me',
-                    active: false
-                }
-            ]
-        }
+    props: {
+        menu: Array
     }
 }
 </script>

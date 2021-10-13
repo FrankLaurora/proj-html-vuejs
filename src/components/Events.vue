@@ -2,7 +2,9 @@
     <section class="events">
         <h3>Upcoming Events</h3>
         <h4>Meet the author in person</h4>
-        <EventCard />
+        <div class="md_container">
+            <EventCard v-for="(element, index) in events" :key="index" :event="element"/>
+        </div>
     </section>
 </template>
 
@@ -11,6 +13,10 @@ import EventCard from './EventCard.vue'
 
 export default {
     name: 'Events',
+
+    props: {
+        events: Array
+    },
 
     components: {
         EventCard
@@ -39,6 +45,11 @@ export default {
             margin-bottom: 60px;
             word-spacing: 0.5rem;
             color: $highlighted-text;
+        }
+
+        .md_container {
+        display: flex;
+        justify-content: space-between;
         }
     }
 </style>

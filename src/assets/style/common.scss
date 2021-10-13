@@ -1,7 +1,7 @@
 // fontawesome
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
 //google fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&family=Lato:wght@300;400;700&display=swap');
 
 // reset
 * {
@@ -71,12 +71,11 @@ ul {
 // typo
 h2 {
     font-size: 3.75rem;
-    font-family: 'Shadows Into Light', cursive;
-    font-style: italic;
+    font-family: 'Kristi', cursive;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.5rem;
 }
 

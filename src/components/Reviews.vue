@@ -9,16 +9,18 @@
         </div>
         <div class="col_left">
             <div class="text_box">
-                <h3>Best Author Of His Generation</h3>
+                <h3>{{mainReview.title}}</h3>
                 <hr>
-                <p class="big_text">This Book will change your perspective on life</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ab soluta id reprehenderit magnam itaque excepturi vel, recusandae porro iusto consequuntur ipsum alias minima blanditiis ullam pariatur. Ipsa, minus obcaecati.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos optio illo ipsa, quidem deserunt at cumque itaque voluptatum quia recusandae dolores ipsam, necessitatibus cupiditate, fuga molestias hic. Necessitatibus, esse voluptatum.</p>
-                <div class="signature"><img :src="require('../assets/img/nytimes-logo-white-xsmall.png')" alt="New York Times logo"><strong>Justine Kilpatrick, <span class="green_text">The New York Times</span></strong></div>
+                <p class="big_text">{{mainReview.subtitle}}</p>
+                <p v-for="(element, index) in mainReview.paragraphs" :key="index">{{element}}</p>
+                <div class="signature">
+                    <img :src="mainReview.logoPath" :alt="mainReview.newspaper">
+                    <strong>{{mainReview.author}}, <span class="green_text">{{mainReview.newspaper}}</span></strong>
+                </div>
             </div>
         </div>
         <div class="col_right">
-            <ReviewCard />
+            <ReviewCard v-for="(element, index) in reviews" :key="index" :review="element"/>
         </div>
     </section>
 </template>
@@ -28,6 +30,11 @@ import ReviewCard from './ReviewCard.vue';
 
 export default {
     name: 'Reviews',
+
+    props: {
+        mainReview: Object,
+        reviews: Array
+    },
 
     components: {
         ReviewCard

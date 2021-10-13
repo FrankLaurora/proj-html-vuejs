@@ -1,14 +1,12 @@
 <template>
-    <div>
-        <div class="review_card" v-for="(element, index) in reviews" :key="index">
-            <div class="text_box">
-                <h4>{{element.title}}</h4>
-                <p>{{element.content}}</p>
-            </div>
-            <div class="signature">
-                <img :src="require(`../assets/img/${element.logoPath}-xsmall.png`)" :alt="`${element.logoPath} logo`">
-                <p><span class="author"><strong>{{element.author}}</strong></span>, {{element.newspaper}}</p>
-            </div>
+    <div class="review_card">
+        <div class="text_box">
+            <h4>{{review.title}}</h4>
+            <p>{{review.content}}</p>
+        </div>
+        <div class="signature">
+            <img :src="require(`../assets/img/${review.logoPath}-xsmall.png`)" :alt="`${review.logoPath} logo`">
+            <p><span class="author"><strong>{{review.author}}</strong></span>, {{review.newspaper}}</p>
         </div>
     </div>
 </template>
@@ -17,25 +15,8 @@
 export default {
     name: 'ReviewCard',
 
-    data() {
-        return {
-            reviews: [
-                {
-                    title: 'A True Masterpiece, Bravo!',
-                    content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero perferendis expedita sapiente, saepe deleniti ad veritatis repellat minus aliquam, blanditiis vel laborum pariatur voluptate accusamus dolorem porro omnis voluptates odit.',
-                    logoPath: 'theguardian',
-                    author: 'Gerald Hendley',
-                    newspaper: 'The Guardian'
-                },
-                {
-                    title: 'A Unique View On The World',
-                    content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero perferendis expedita sapiente, saepe deleniti ad veritatis repellat minus aliquam, blanditiis vel laborum pariatur voluptate accusamus dolorem porro omnis voluptates odit.',
-                    logoPath: 'globe',
-                    author: 'Mary Maxey',
-                    newspaper: 'The Globe And Mail'
-                }
-            ]
-        }
+    props: {
+        review: Object
     }
 }
 </script>

@@ -2,8 +2,8 @@
     <section class="more_info">
         <h3>Dig A Little Deeper Into Damon Vaughn</h3>
         <h4>Find out more about the author himsel</h4>
-        <div>
-            <InfoCard />
+        <div class="md_container">
+            <InfoCard v-for="(element, index) in cardInfo" :key="index" :info="element"/>
         </div>
     </section>
 </template>
@@ -13,6 +13,10 @@ import InfoCard from './InfoCard.vue'
 
 export default {
     name: 'MoreInfo',
+
+    props: {
+        cardInfo: Array
+    },
 
     components: {
         InfoCard
@@ -43,7 +47,9 @@ export default {
         }
 
         .md_container {
-            display: flex;
+        display: flex;
+        padding: 80px 60px;
+        justify-content: space-between;
         }
     }
 </style>

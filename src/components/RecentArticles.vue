@@ -10,16 +10,16 @@
             </div>
             <div class="col_left">
                 <div class="article_highlight">
-                    <img :src="article_highlight.img" :alt="article_highlight.title">
+                    <img :src="mainArticle.img" :alt="mainArticle.title">
                     <div class="text_box">
-                        <h3>{{article_highlight.title}}</h3>
-                        <div class="small_text">By <span class="black_text">{{article_highlight.author}}</span> | {{article_highlight.date}} | Categories: <span class="black_text">{{article_highlight.categories}}</span></div>
-                        <p>{{article_highlight.content}}</p>
+                        <h3>{{mainArticle.title}}</h3>
+                        <div class="small_text">By <span class="black_text">{{mainArticle.author}}</span> | {{mainArticle.date}} | Categories: <span class="black_text">{{mainArticle.categories}}</span></div>
+                        <p>{{mainArticle.content}}</p>
                     </div>
                 </div>
             </div>
             <div class="col_right">
-                <ArticleCard />
+                <ArticleCard v-for="(element, index) in articleCards" :key="index" :articleCard="element" />
             </div>
         </div>
     </section>
@@ -34,18 +34,10 @@ export default {
     components: {
         ArticleCard
     },
-    
-    data() {
-        return {
-            article_highlight: {
-                title: '20 Creativity Tips',
-                author: 'admin',
-                date: 'October 24th, 2019',
-                categories: 'Event, Tips & Tricks',
-                content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex accusamus magni corporis? Tempore iure ducimus animi tempora.',
-                img: require('../assets/img/20-Tips-800x471.jpg')
-            }
-        }
+
+    props: {
+        mainArticle: Object,
+        articleCards: Array
     }
 }
 </script>

@@ -3,26 +3,26 @@
         <img :src="require('../assets/img/author-logo-round-small.png')" alt="Logo">
         <div class="md_container">
             <div class="col about">
-                <h4>{{about.title}}</h4>
-                <p>{{about.content}}</p>
+                <h4>{{footerAbout.title}}</h4>
+                <p>{{footerAbout.content}}</p>
             </div>
             <div class="col">
-                <h4>{{links.title}}</h4>
+                <h4>{{footerLinks.title}}</h4>
                 <ul class="fa-ul links">
-                    <li v-for="(element, index) in links.content" :key="index">
+                    <li v-for="(element, index) in footerLinks.content" :key="index">
                         <span class="fa-li"><i class="fas fa-angle-right"></i></span>
                         <a href="#">{{element}}</a>
                     </li>
                 </ul>
             </div>
             <div class="col contacts">
-                <h4>{{contacts.title}}</h4>
-                <p>{{contacts.address}}</p>
-                <p>Phone: {{contacts.phone}}</p>
-                <p>Mobile: {{contacts.mobile}}</p>
-                <p>Email: <span class="email">{{contacts.email}}</span></p>
+                <h4>{{footerContacts.title}}</h4>
+                <p>{{footerContacts.address}}</p>
+                <p>Phone: {{footerContacts.phone}}</p>
+                <p>Mobile: {{footerContacts.mobile}}</p>
+                <p>Email: <span class="email">{{footerContacts.email}}</span></p>
                 <ul class="social">
-                    <li v-for="(element, index) in contacts.social" :key="index">
+                    <li v-for="(element, index) in footerContacts.social" :key="index">
                         <a href="#"><i :class="`fab fa-${element}`"></i></a>
                     </li>
                 </ul>
@@ -36,39 +36,10 @@
 export default {
     name: 'Footer',
 
-    data() {
-        return {
-            about: {
-                title: 'about me',
-                content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perspiciatis id, aut sit dolorem animi est inventore! Repellat eius ducimus quam ipsam culpa! Facere ducimus laborum nesciunt ipsam autem quos.'
-            },
-
-            links: {
-                title: 'useful links',
-                content: [
-                    'Latest Books',
-                    'Upcoming Events',
-                    'Recent Articles',
-                    'Business Enquiries',
-                    'Visit My Foundation'
-                ]
-            },
-
-            contacts: {
-                title: 'contact info',
-                address: '63 E. Studebaker Street Bolingbrook, IL 60440',
-                phone: '(800) 000-0000',
-                mobile: '(800) 000-0000',
-                email: 'info@your-company.com',
-                social: [
-                    'facebook-f',
-                    'twitter',
-                    'instagram',
-                    'linkedin-in',
-                    'youtube'
-                ]
-            }
-        }
+    props: {
+        footerAbout: Object,
+        footerLinks: Object,
+        footerContacts: Object
     }
 }
 </script>
@@ -118,7 +89,6 @@ export default {
 
             .links {
                 color: $light-text;
-                padding-left: 1.5rem;
                 font-family: 'Roboto', sans-serif;
                 li {
                     padding: 0.5rem;
