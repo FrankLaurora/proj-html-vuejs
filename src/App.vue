@@ -7,6 +7,7 @@
     <Events />
     <Subscription />
     <MoreInfo />
+    <RecentArticles />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Reviews from './components/Reviews.vue';
 import Events from './components/Events.vue';
 import Subscription from './components/Subscription.vue'
 import MoreInfo from './components/MoreInfo.vue';
+import RecentArticles from './components/RecentArticles.vue'
 
 export default {
   components: {
@@ -27,7 +29,8 @@ export default {
     Reviews,
     Events,
     Subscription,
-    MoreInfo
+    MoreInfo,
+    RecentArticles
     }
 }
 </script>

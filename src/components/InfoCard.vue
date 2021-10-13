@@ -45,12 +45,13 @@ export default {
 
     .md_container {
         display: flex;
-        justify-content: space-around;
+        padding: 80px 60px;
+        justify-content: space-between;
     }
 
     .col_third {
         position: relative;
-        width: calc((100% / 3) - 55px);
+        width: calc((100% - 110px) / 3);
         background-size: cover;
         background-position: left;
         border-bottom-right-radius: 90px;

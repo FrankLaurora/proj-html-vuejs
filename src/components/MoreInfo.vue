@@ -2,7 +2,9 @@
     <section class="more_info">
         <h3>Dig A Little Deeper Into Damon Vaughn</h3>
         <h4>Find out more about the author himsel</h4>
-        <InfoCard />
+        <div>
+            <InfoCard />
+        </div>
     </section>
 </template>
 
@@ -38,6 +40,10 @@ export default {
             margin-bottom: 60px;
             word-spacing: 0.5rem;
             color: $dark-green;
+        }
+
+        .md_container {
+            display: flex;
         }
     }
 </style>
