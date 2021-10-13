@@ -1,19 +1,19 @@
 <template>
-    <section class="events">
-        <h3>Upcoming Events</h3>
-        <h4>Meet the author in person</h4>
-        <EventCard />
+    <section class="more_info">
+        <h3>Dig A Little Deeper Into Damon Vaughn</h3>
+        <h4>Find out more about the author himsel</h4>
+        <InfoCard />
     </section>
 </template>
 
 <script>
-import EventCard from './EventCard.vue'
+import InfoCard from './InfoCard.vue'
 
 export default {
-    name: 'Events',
+    name: 'MoreInfo',
 
     components: {
-        EventCard
+        InfoCard
     }
 }
 </script>
@@ -22,8 +22,7 @@ export default {
 @import '../assets/style/common.scss';
 @import '../assets/style/variables.scss';
 
-    .events {
-        background-color: $main-bg;
+    .more_info {
         text-align: center;
         padding-block: 80px;
 
@@ -38,7 +37,7 @@ export default {
             text-align: center;
             margin-bottom: 60px;
             word-spacing: 0.5rem;
-            color: $highlighted-text;
+            color: $dark-green;
         }
     }
 </style>

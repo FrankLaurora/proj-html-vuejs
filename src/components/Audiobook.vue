@@ -1,5 +1,5 @@
 <template>
-    <div class="audiobook">
+    <section class="audiobook">
         <div class="top">
             <div class="md_container">
                 <img v-for="(element, index) in formats" :key="index" :src="require(`../assets/img/${element}-logotan-2x-200x66.png`)" :alt="element">
@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

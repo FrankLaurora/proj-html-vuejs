@@ -6,6 +6,7 @@
     <Reviews />
     <Events />
     <Subscription />
+    <MoreInfo />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Audiobook from './components/Audiobook.vue';
 import Reviews from './components/Reviews.vue';
 import Events from './components/Events.vue';
 import Subscription from './components/Subscription.vue'
+import MoreInfo from './components/MoreInfo.vue';
 
 export default {
   components: {
@@ -24,7 +26,8 @@ export default {
     Audiobook,
     Reviews,
     Events,
-    Subscription
+    Subscription,
+    MoreInfo
     }
 }
 </script>

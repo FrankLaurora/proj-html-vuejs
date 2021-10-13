@@ -1,5 +1,5 @@
 <template>
-    <div class="reviews md_container">
+    <section class="reviews md_container">
         <div class="top_bar">
             <div class="title_box">
                 <h3>What The Critics Say</h3>
@@ -20,7 +20,7 @@
         <div class="col_right">
             <ReviewCard />
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
