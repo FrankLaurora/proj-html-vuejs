@@ -1,13 +1,13 @@
 <template>
     <section>
         <div class="sm_container">
-            <h3>Subscribe To My Newsletter</h3>
-            <h4>Be notified about book signing tour dates</h4>
+            <h3 class="light">Subscribe To My Newsletter</h3>
+            <p class="subtitle highlighted bold_text">Be notified about book signing tour dates</p>
             <form>
                 <input type="email" placeholder="Insert your email ...*">
                 <button class="btn btn_green" type="button">Subscribe</button>
             </form>
-            <p>Quibusdam suscipit odit est accusantium officiis? Quo praesentium, earum impedit modi nulla quaerat.</p>
+            <p class="gray">Quibusdam suscipit odit est accusantium officiis? Quo praesentium, earum impedit modi nulla quaerat.</p>
         </div>
     </section>
 </template>
@@ -32,22 +32,7 @@ export default {
             padding: 120px 80px;
 
             h3 {
-                color: $light-text;
-                font-size: 2.2rem;
                 margin-bottom: 1rem;
-            }
-
-            h4 {
-                text-transform: uppercase;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 500;
-                text-align: center;
-                word-spacing: 0.5rem;
-                color: $highlighted-text;
-            }
-
-            p {
-                color: $gray-text
             }
 
             form {
@@ -63,10 +48,6 @@ export default {
                 padding-inline: 1.5rem;
                 width: 60%;
                 outline: none;
-            }
-
-            button {
-                width: 30%;
             }
         }
     }

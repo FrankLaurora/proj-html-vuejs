@@ -1,7 +1,7 @@
 <template>
     <section class="more_info">
-        <h3>Dig A Little Deeper Into Damon Vaughn</h3>
-        <h4>Find out more about the author himsel</h4>
+        <h3 class="dark">Dig A Little Deeper Into Damon Vaughn</h3>
+        <p class="subtitle green bold_text">Find out more about the author himsel</p>
         <div class="md_container">
             <InfoCard v-for="(element, index) in cardInfo" :key="index" :info="element"/>
         </div>
@@ -33,22 +33,15 @@ export default {
         padding-block: 80px;
 
         h3 {
-            font-size: 2.2rem;
             margin-bottom: 1rem;
         }
-        h4 {
-            text-transform: uppercase;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            text-align: center;
+        p {
             margin-bottom: 60px;
-            word-spacing: 0.5rem;
-            color: $dark-green;
         }
 
         .md_container {
         display: flex;
-        padding: 80px 60px;
+        padding-inline: 60px;
         justify-content: space-between;
         }
     }

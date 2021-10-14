@@ -2,9 +2,9 @@
     <div class="card">
         <img :src="require(`../assets/img/event-${event.img}-400x240.jpg`)" :alt="event.title">
         <div class="text_box">
-            <h4>{{event.title}}</h4>
+            <h4 class="slim">{{event.title}}</h4>
             <hr>
-            <p>{{event.content}}</p>
+            <p class="gray">{{event.content}}</p>
         </div>
     </div>
 </template>
@@ -35,25 +35,16 @@ export default {
 
         &:hover img {
             filter: opacity(70%);
+            transition: 0.1s;
         }
 
         .text_box {
             background-color: #fff;
             padding: 36px;
 
-            h4 {
-                font-size: 1.5rem;
-                font-weight: 400;
-                font-family: 'Roboto', sans-serif;
-            }
-
             hr {
                 margin-block: 1rem;
-                border: 0.5px solid #e8e8e8;
-            }
-
-            p {
-                color: $gray-text
+                border-top: 2px solid #e8e8e8;
             }
         }
     }

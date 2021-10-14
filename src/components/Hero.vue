@@ -1,9 +1,9 @@
 <template>
     <div class="hero md_container">
         <div class="infobox">
-            <h2>Damon Vaughn</h2>
-            <h3>Best-selling author and the most influential public intellectual in the western world right now.</h3>
-            <p><em>- The New York Times </em></p>
+            <h2 class="highlighted">Damon Vaughn</h2>
+            <h2 class="light">Best-selling author and the most influential public intellectual in the western world right now.</h2>
+            <h4 class="slim"><em>- The New York Times </em></h4>
             <div class="page_turner">
                 <i class="fas fa-arrow-left btn_left"></i>
                 <i class="fas fa-arrow-right btn_right"></i>
@@ -31,19 +31,9 @@ export default {
         width: 50%;
         padding-block: 40px;
 
-        h2 {
-            color: $highlighted-text;
-        }
-        
-        h3 {
-            color: $light-text;
-            font-size: 2.25rem;
-            line-height: 5rem;
-        }
-
-        p {
+        h4 {
             color: $gray-text;
-            margin-bottom: 2rem;
+            margin-block: 2rem;
         }
 
         .page_turner {

@@ -41,38 +41,32 @@ export default {
         // header navbar data
         menu: [
           {
-              link: 'Home',
-              active: true
-          },
-          
+            link: 'Home',
+            active: true
+          },          
           {
-              link: 'About Me',
-              active: false
+            link: 'About Me',
+            active: false
           },
-
           {
-              link: 'Testimonials',
-              active: false
+            link: 'Testimonials',
+            active: false
           },
-
           {
-              link: 'My Blog',
-              active: false
+            link: 'My Blog',
+            active: false
           },
-
           {
-              link: 'Meetups',
-              active: false
+            link: 'Meetups',
+            active: false
           },
-
           {
-              link: 'Shop',
-              active: false
+            link: 'Shop',
+            active: false
           },
-
           {
-              link: 'Contact Me',
-              active: false
+            link: 'Contact Me',
+            active: false
           }
         ],
         // about seciton data
@@ -82,6 +76,7 @@ export default {
         },
         //reviews highlighted data
         highlightedReview: {
+          img: require('./assets/img/testimonial2-2x.jpg'),
           title: 'Best Author Of His Generation',
           subtitle: 'This Book will change your perspective on life',
           paragraphs: {
@@ -112,37 +107,37 @@ export default {
         //events cards data
         events: [
           {
-              title: 'Chicago Book Signing',
-              content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, aspernatur suscipit dicta velit quae eius fuga dignissimos.',
-              img: '05'
+            title: 'Chicago Book Signing',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, aspernatur suscipit dicta velit quae eius fuga dignissimos.',
+            img: '05'
           },
           {
-              title: 'Meet & Greet With Amanda',
-              content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, aspernatur suscipit dicta velit quae eius fuga dignissimos.',
-              img: '04'
+            title: 'Meet & Greet With Amanda',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, aspernatur suscipit dicta velit quae eius fuga dignissimos.',
+            img: '04'
           },
           {
-              title: 'Open Book: Dialogues',
-              content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, aspernatur suscipit dicta velit quae eius fuga dignissimos.',
-              img: '07'
+            title: 'Open Book: Dialogues',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, aspernatur suscipit dicta velit quae eius fuga dignissimos.',
+            img: '07'
           }
         ],
         //info cards data
         cardInfo: [
           {
-              title: 'About Me',
-              content: 'Vestibulum ante ipsum primis',
-              img: require('./assets/img/box-1.jpg')
+            title: 'About Me',
+            content: 'Vestibulum ante ipsum primis',
+            img: require('./assets/img/box-1.jpg')
           },
           {
-              title: 'My Latest Book',
-              content: 'Vestibulum ante ipsum primis',
-              img: require('./assets/img/box-4.jpg')
+            title: 'My Latest Book',
+            content: 'Vestibulum ante ipsum primis',
+            img: require('./assets/img/box-4.jpg')
           },
           {
-              title: 'Book',
-              content: 'Vestibulum ante ipsum primis',
-              img: require('./assets/img/box-3.jpg')
+            title: 'Book',
+            content: 'Vestibulum ante ipsum primis',
+            img: require('./assets/img/box-3.jpg')
           }
         ],
         //articles highlighted data
@@ -151,22 +146,22 @@ export default {
           author: 'admin',
           date: 'October 24th, 2019',
           categories: 'Event, Tips & Tricks',
-          content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex accusamus magni corporis? Tempore iure ducimus animi tempora.',
+          content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint provident voluptate enim dolor eos minus excepturi reiciendis, illo molestiae, reprehenderit numquam iste dolores voluptatibus dolorem eum, consectetur quas repellat!',
           img: require('./assets/img/20-Tips-800x471.jpg')
         },
         //article cards data
         articleCards: [
           {
-              title: 'What\'s On Your Booklist?',
-              date: 'October 24th, 2019',
-              comments: 0,
-              img: require('./assets/img/thumb-13-2x-320x202.jpg')
+            title: 'What\'s On Your Booklist?',
+            date: 'October 24th, 2019',
+            comments: 0,
+            img: require('./assets/img/thumb-13-2x-320x202.jpg')
           },
-            {
-              title: 'Istanbul Travel Guide',
-              date: 'October 24th, 2019',
-              comments: 0,
-              img: require('./assets/img/thumb-08-2x-320x202.jpg')
+          {
+            title: 'Istanbul Travel Guide',
+            date: 'October 24th, 2019',
+            comments: 0,
+            img: require('./assets/img/thumb-08-2x-320x202.jpg')
           }
         ],
         //footer about section
@@ -178,11 +173,11 @@ export default {
         footerLinks: {
           title: 'useful links',
           content: [
-              'Latest Books',
-              'Upcoming Events',
-              'Recent Articles',
-              'Business Enquiries',
-              'Visit My Foundation'
+            'Latest Books',
+            'Upcoming Events',
+            'Recent Articles',
+            'Business Enquiries',
+            'Visit My Foundation'
           ]
         },
         //footer contacts section
@@ -193,11 +188,11 @@ export default {
           mobile: '(800) 000-0000',
           email: 'info@your-company.com',
           social: [
-              'facebook-f',
-              'twitter',
-              'instagram',
-              'linkedin-in',
-              'youtube'
+            'facebook-f',
+            'twitter',
+            'instagram',
+            'linkedin-in',
+            'youtube'
           ]
         }
       }

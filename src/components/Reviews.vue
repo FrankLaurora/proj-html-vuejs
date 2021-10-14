@@ -2,20 +2,20 @@
     <section class="reviews md_container">
         <div class="top_bar">
             <div class="title_box">
-                <h3>What The Critics Say</h3>
-                <h4 class="green_text">Testimonials from around the world</h4>
+                <h3 class="dark">What The Critics Say</h3>
+                <p class="subtitle green bold_text">Testimonials from around the world</p>
             </div>
             <button class="btn btn_yellow">Read All Testimonials</button>
         </div>
-        <div class="col_left">
+        <div class="col_left" :style="{backgroundImage: 'url(' + mainReview.img + ')'}">
             <div class="text_box">
-                <h3>{{mainReview.title}}</h3>
+                <h3 class="light">{{mainReview.title}}</h3>
                 <hr>
-                <p class="big_text">{{mainReview.subtitle}}</p>
-                <p v-for="(element, index) in mainReview.paragraphs" :key="index">{{element}}</p>
+                <p class="med_text light">{{mainReview.subtitle}}</p>
+                <p class="light" v-for="(element, index) in mainReview.paragraphs" :key="index">{{element}}</p>
                 <div class="signature">
                     <img :src="mainReview.logoPath" :alt="mainReview.newspaper">
-                    <strong>{{mainReview.author}}, <span class="green_text">{{mainReview.newspaper}}</span></strong>
+                    <p class="light bold_text">{{mainReview.author}}, <span class="green">{{mainReview.newspaper}}</span></p>
                 </div>
             </div>
         </div>
@@ -52,14 +52,9 @@ export default {
         padding: 80px 60px;
         justify-content: space-between;
 
-        .green_text {
-            color: $dark-green;
-        }
-
         .signature {
             display: flex;
             align-items: center;
-            font-family: 'Roboto', sans-serif;
             padding-top: 1rem;
             
             img{
@@ -67,14 +62,12 @@ export default {
             }
         }
         
-        h3 {
-            font-size: 2.2rem;
-        }
         .top_bar {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 45px;
 
             h4 {
                 text-transform: uppercase;
@@ -89,13 +82,11 @@ export default {
         .col_left {
             position: relative;
             width: calc(60% - 40px);
-            background-image: url('../assets/img/testimonial2-2x.jpg');
             background-size: cover;
             background-position: center;
             border-bottom-right-radius: 90px;
             padding: 110px 80px;
             overflow: hidden;
-            color: #fff;
             align-self: flex-start;
 
             &::before {
@@ -114,15 +105,10 @@ export default {
 
                 hr {
                     margin-top: 2.5rem;
-                    border: 1px solid rgba(255,255,255, 0.2);
-                }
-
-                .big_text {
-                    font-size: 1.2rem;
                 }
 
                 p {
-                    margin-block: 2rem;
+                    margin-block: 1.5rem;
                 }
             }
         }

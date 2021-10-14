@@ -2,12 +2,12 @@
     <div class="shop_box">       
         <img :src="require('../assets/img/book-widget.png')" alt="cover and kindle">
         <div class="text_box">
-            <h4>Latest Book Release</h4>
-            <h5 class="small_text">d. vaughn autobiography</h5>
-            <p class="small_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum quaerat alias. A minus recusandae alias. Numquam velit accusamus nulla dicta sapiente.</p>
+            <h4 class="dark">Latest Book Release</h4>
+            <p class="subtitle highlighted small_text bold_text">d. vaughn autobiography</p>
+            <p class="gray small_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum quaerat alias. A minus recusandae alias. Numquam velit accusamus nulla dicta sapiente.</p>
         </div>
-        <button class="btn_left small_text"><i class="fab fa-amazon"></i> Buy On Amazon</button>
-        <button class="btn_right small_text"><i class="fab fa-apple"></i> Buy On AppStore</button>   
+        <button class="btn btn_left dark"><i class="fab fa-amazon"></i> Buy On Amazon</button>
+        <button class="btn btn_right dark"><i class="fab fa-apple"></i> Buy On AppStore</button>   
     </div>
 </template>
 
@@ -31,19 +31,9 @@ export default {
         width: 36%;
         background-color: #ffffff;
         padding: 50px 70px 40px;
-
-        h5, button {
-            font-family: 'Roboto', sans-serif;
-        }
         
-        h4, h5 {
+        h4 {
             line-height: 1.8rem;
-        }
-
-        h5 {
-            text-transform: uppercase;
-            color: $highlighted-text;
-            word-spacing: 0.5rem;
         }
 
         img, .text_box, button {
@@ -52,14 +42,14 @@ export default {
         
         button {
             padding-block: 1.1rem;
-            border: 1px solid rgba($btn-primary, 0.5);
-            background-color: rgba($btn-primary, 0.1);
-            box-shadow: 0 3px 10px $btn-primary;
-            font-weight: 500;
+            border: 1px solid #a4d2c2;
+            background-color: #f5fcfa;
+            box-shadow: 0 3px 10px #a4d2c2;
 
             &:hover {
                 background-color: #fff;
-                border-color: $btn-primary;
+                border-color: #38d18e;
+                transition: 0.1s;
             }
         }
 

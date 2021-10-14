@@ -1,7 +1,7 @@
 <template>
     <section class="events">
-        <h3>Upcoming Events</h3>
-        <h4>Meet the author in person</h4>
+        <h3 class="dark">Upcoming Events</h3>
+        <p class="subtitle highlighted bold_text">Meet the author in person</p>
         <div class="md_container">
             <EventCard v-for="(element, index) in events" :key="index" :event="element"/>
         </div>
@@ -34,17 +34,10 @@ export default {
         padding-block: 80px;
 
         h3 {
-            font-size: 2.2rem;
             margin-bottom: 1rem;
         }
-        h4 {
-            text-transform: uppercase;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            text-align: center;
+        p {
             margin-bottom: 60px;
-            word-spacing: 0.5rem;
-            color: $highlighted-text;
         }
 
         .md_container {

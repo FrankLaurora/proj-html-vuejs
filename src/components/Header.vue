@@ -1,9 +1,9 @@
 <template>
     <div class="lg_container">
         <img :src="require('../assets/img/author-logo-round-200x205.png')" alt="Logo">
-        <ul>
-            <li class="small_text" :class="element.active == true ? 'active' : ''" v-for="(element, index) in menu" :key="index">{{element.link}}</li>
-            <li class="small_text"><i class="fas fa-shopping-cart"></i></li>
+        <ul class="bold_text">
+            <li class="small_text" :class="element.active == true ? 'active' : ''" v-for="(element, index) in menu" :key="index"><a href="#">{{element.link}}</a></li>
+            <li class="small_text"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
     </div>
 </template>

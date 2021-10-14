@@ -3,32 +3,32 @@
         <img :src="require('../assets/img/author-logo-round-small.png')" alt="Logo">
         <div class="md_container">
             <div class="col about">
-                <h4>{{footerAbout.title}}</h4>
-                <p>{{footerAbout.content}}</p>
+                <h5 class="light">{{footerAbout.title}}</h5>
+                <p class="light_gray">{{footerAbout.content}}</p>
             </div>
             <div class="col">
-                <h4>{{footerLinks.title}}</h4>
+                <h5 class="light">{{footerLinks.title}}</h5>
                 <ul class="fa-ul links">
-                    <li v-for="(element, index) in footerLinks.content" :key="index">
+                    <li class="light" v-for="(element, index) in footerLinks.content" :key="index">
                         <span class="fa-li"><i class="fas fa-angle-right"></i></span>
                         <a href="#">{{element}}</a>
                     </li>
                 </ul>
             </div>
             <div class="col contacts">
-                <h4>{{footerContacts.title}}</h4>
-                <p>{{footerContacts.address}}</p>
-                <p>Phone: {{footerContacts.phone}}</p>
-                <p>Mobile: {{footerContacts.mobile}}</p>
-                <p>Email: <span class="email">{{footerContacts.email}}</span></p>
+                <h5 class="light">{{footerContacts.title}}</h5>
+                <p class="light_gray">{{footerContacts.address}}</p>
+                <p class="light_gray">Phone: {{footerContacts.phone}}</p>
+                <p class="light_gray">Mobile: {{footerContacts.mobile}}</p>
+                <p class="light_gray">Email: <span class="email light">{{footerContacts.email}}</span></p>
                 <ul class="social">
-                    <li v-for="(element, index) in footerContacts.social" :key="index">
+                    <li class="light_gray" v-for="(element, index) in footerContacts.social" :key="index">
                         <a href="#"><i :class="`fab fa-${element}`"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
-        <p class="credits">&copy; Copyright 2012 - 2020 | Avada Theme by <a href="#">ThemeFusion</a> | All Rights Reserved | Powered by <a href="#">WordPress</a></p>        
+        <p class=" light_gray credits">&copy; Copyright 2012 - 2020 | Avada Theme by <a class="light" href="#">ThemeFusion</a> | All Rights Reserved | Powered by <a class="light" href="#">WordPress</a></p>        
     </footer>
 </template>
 
@@ -64,12 +64,7 @@ export default {
 
         .credits {
             text-align: center;
-            color: $gray-text;
             margin-top: 5rem;
-            
-            a {
-                color: $light-text;
-            }
         }
 
         .md_container {
@@ -80,16 +75,11 @@ export default {
         .col {
             width: 445px;
             
-            h4 {
-                text-transform: uppercase;
-                font-size: 1rem;
-                color: $light-text;
+            h5 {
                 margin-bottom: 2rem;
             }
 
             .links {
-                color: $light-text;
-                font-family: 'Roboto', sans-serif;
                 li {
                     padding: 0.5rem;
                 }
@@ -99,20 +89,14 @@ export default {
 
         .about {
             p{
-                color: $gray-text;
                 padding: 0.5rem 7.5rem 0 0;
             }
         }
 
         .contacts {
-            color: $gray-text;
 
             p {
                 margin-bottom: 1rem;
-            }
-
-            .email {
-                color: $light-text;
             }
 
             .social {

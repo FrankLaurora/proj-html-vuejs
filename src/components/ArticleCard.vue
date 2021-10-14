@@ -1,8 +1,8 @@
 <template>
     <div class="article_card">
         <img :src="articleCard.img" :alt="articleCard.title">
-        <h3>{{articleCard.title}}</h3>
-        <div class="small_text">{{articleCard.date}} <span class="black_text">| {{articleCard.comments}} comments</span></div>
+        <h4 class="slim med_text">{{articleCard.title}}</h4>
+        <div class="gray small_text">{{articleCard.date}} <span class="dark">| {{articleCard.comments}} comments</span></div>
     </div>
 </template>
 
@@ -29,19 +29,7 @@ export default {
         display: block;
     }
 
-    h3 {
-        font-size: 1.5rem;
-        font-weight: 400;
-        font-family: 'Roboto', sans-serif;
+    h4 {
         margin-block: 1rem;
-    }
-
-    .small_text {
-        color: $gray-text;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .black_text {
-        color: #000;
     }
 </style>

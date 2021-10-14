@@ -9,9 +9,9 @@
             <div class="md_container">
                 <img class="col_6" :src="require('../assets/img/audible-app-2x-600x628.png')" alt="audiobook presetation">
                 <div class="text_box col_6">
-                    <h3>New Audiobook</h3>
-                    <h4>No time to read? No problem. Listen to it</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe officia aliquid, sapiente debitis dicta.</p>
+                    <h3 class="light">New Audiobook</h3>
+                    <p class="subtitle highlighted bold_text">No time to read? No problem. Listen to it</p>
+                    <p class="gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore saepe officia aliquid, sapiente debitis dicta.</p>
                     <div class="logos">
                         <img :src="require('../assets/img/audible-logo.png')" alt="audible logo">
                         <img :src="require('../assets/img/bn-logo-tall.png')" alt="bn logo">
@@ -78,30 +78,15 @@ export default {
 
                 .text_box {
                     text-align: center;
-
-                    h3 {
-                        color: $light-text;
-                        font-size: 2rem;
-                    }
-
-                    h4 {
-                        color: $highlighted-text;
-                        text-transform: uppercase;
-                        font-family: 'Roboto', sans-serif;
-                        font-weight: 500;
-                        text-align: center;
-                        margin-block: 2rem;
-                        word-spacing: 0.5rem;
-                    }
-
-                    p {
-                        color: $gray-text;
-                    }
                     
                     .logos {
                         display: flex;
                         justify-content: space-between;
                         margin-top: 2rem;
+
+                        img {
+                            width: calc((100% - 90px) / 3);
+                        }
                     }
                 }
             }

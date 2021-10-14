@@ -1,7 +1,9 @@
 // fontawesome
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
 //google fonts
-@import url('https://fonts.googleapis.com/css2?family=Kristi&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&family=DM+Serif+Display&family=Lato:wght@300;400;700&display=swap');
+//variables
+@import './variables.scss';
 
 // reset
 * {
@@ -36,20 +38,27 @@ ul {
 }
 
 // buttons 
+
+.btn {
+    border: none;
+    color: $light-text;
+    border-radius: 5px;
+    padding: 1rem 2.5rem;
+    font-size: 0.625rem;
+    font-weight: 700;
+}
+
 .btn_left {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 .btn_right {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-}
-
-.btn {
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    padding: 1rem 2.5rem;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 .btn_green {
@@ -58,6 +67,7 @@ ul {
 
 .btn_green:hover {
     background-color: #357f60;
+    transition: 0.1s;
 }
 
 .btn_yellow {
@@ -67,24 +77,119 @@ ul {
 
 .btn_yellow:hover {
     background-color:#f4a700;
+    transition: 0.1s;
 }
 // typo
-h2 {
-    font-size: 3.75rem;
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+h2.highlighted {
+    font-size: 6rem;
     font-family: 'Kristi', cursive;
+    color: $highlighted-text
+}
+
+h2.light {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: $light-text;
+    font-weight: 400;
+}
+
+h3.light {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.75rem;
+    color: $light-text;
+    font-weight: 400;
+}
+
+h3.dark {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.75rem;
+    color: $dark-text;
+    font-weight: 400;
+}
+
+h4.dark {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1rem;
+    color: $dark-text;
+    font-weight: 400;
+}
+
+h4.slim {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+h5.light {
+    font-family: 'DM Serif Display', serif;
+    font-size: 0.8rem;
+    color: $light-text;
+    font-weight: 400;
+    word-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 
 p {
-    font-family: 'Lato', sans-serif;
     line-height: 1.5rem;
+    font-size: 0.75rem;
+}
+
+p.subtitle {
+    word-spacing: 0.4rem;
+    text-transform: uppercase;
 }
 
 .small_text {
     font-size: 10px;
 }
 
+.med_text {
+    font-size: 1rem;
+}
+
+.big_text {
+    font-size: 21px;
+}
+
+.bold_text {
+    font-weight: 700;
+}
+
+.highlighted {
+    color: $highlighted-text;
+}
+
+.gray {
+    color: $gray-text;
+}
+
+.light_gray {
+    color: $light_gray;
+}
+
+.green {
+    color: $dark-green;
+}
+
+.light {
+    color: $light-text;
+}
+
+.dark {
+    color: #000;
+}
+
 // links
 a {
     text-decoration: none;
     color: inherit;
+}
+
+//horizontal rule
+hr {
+    border: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
 }

@@ -1,7 +1,7 @@
 <template>
     <div class="col_third" :style="{backgroundImage: 'url(' + info.img + ')'}">
         <div class="text_box">
-            <h3>{{info.title}}</h3>
+            <h4 class="slim big_text">{{info.title}}</h4>
             <hr>
             <p>{{info.content}}</p>     
         </div>
@@ -27,7 +27,7 @@ export default {
         width: calc((100% - 110px) / 3);
         background-size: cover;
         background-position: left;
-        border-bottom-right-radius: 90px;
+        border-bottom-right-radius: 45px;
         padding: 380px 80px 45px;
         overflow: hidden;
         color: #fff;
@@ -54,15 +54,11 @@ export default {
             text-align: center;
             z-index: 1;
 
-            h3 {
-                font-family: 'Roboto', sans-serif;
-                font-size: 1.5rem;
+            h4 {
                 margin-block: 20px;
-                font-weight: 400;
             }
 
             hr {
-                border: 1px solid rgba(255,255,255, 0.2);
                 width: 50px;
                 margin: auto;
             }

@@ -3,8 +3,8 @@
         <div class="md_container">
             <div class="top_bar">
                 <div class="title_box">
-                    <h3>Recent Articles</h3>
-                    <h4 class="green_text">Testimonials from around the world</h4>
+                    <h3 class="dark">Recent Articles</h3>
+                    <p class="subtitle green bold_text">Read the last entries</p>
                 </div>
                 <button class="btn btn_yellow">All Articles</button>
             </div>
@@ -12,9 +12,9 @@
                 <div class="article_highlight">
                     <img :src="mainArticle.img" :alt="mainArticle.title">
                     <div class="text_box">
-                        <h3>{{mainArticle.title}}</h3>
-                        <div class="small_text">By <span class="black_text">{{mainArticle.author}}</span> | {{mainArticle.date}} | Categories: <span class="black_text">{{mainArticle.categories}}</span></div>
-                        <p>{{mainArticle.content}}</p>
+                        <h4 class="slim">{{mainArticle.title}}</h4>
+                        <div class="small_text gray">By <span class="dark">{{mainArticle.author}}</span> | {{mainArticle.date}} | Categories: <span class="dark">{{mainArticle.categories}}</span></div>
+                        <p class="gray">{{mainArticle.content}}</p>
                     </div>
                 </div>
             </div>
@@ -56,27 +56,14 @@ export default {
         padding: 80px 60px;
         justify-content: space-between;
 
-        .green_text {
-            color: $dark-green;
-        }
-        
-        h3 {
-            font-size: 2.2rem;
-        }
-
         .top_bar {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            h4 {
-                text-transform: uppercase;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 500;
-                text-align: center;
-                margin-block: 2rem;
-                word-spacing: 0.5rem;
+            .subtitle {
+                margin-block: 1.875rem;
             }
         }
 
@@ -94,24 +81,8 @@ export default {
                 padding: 40px 20px 0;
             }
 
-            h3 {
-                font-size: 1.5rem;
-                font-weight: 400;
-                font-family: 'Roboto', sans-serif;
-            }
-
-            p {
-                color: $gray-text
-            }
-
             .small_text {
-                color: $gray-text;
-                font-family: 'Roboto', sans-serif;
                 margin: 1rem 0 1.5rem;
-            }
-
-            .black_text {
-                color: #000;
             }
         }
 

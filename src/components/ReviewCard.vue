@@ -1,12 +1,12 @@
 <template>
     <div class="review_card">
         <div class="text_box">
-            <h4>{{review.title}}</h4>
-            <p>{{review.content}}</p>
+            <h4 class="dark">{{review.title}}</h4>
+            <p class="gray">{{review.content}}</p>
         </div>
         <div class="signature">
             <img :src="require(`../assets/img/${review.logoPath}-xsmall.png`)" :alt="`${review.logoPath} logo`">
-            <p><span class="author"><strong>{{review.author}}</strong></span>, {{review.newspaper}}</p>
+            <p><span class="gray"><strong>{{review.author}}</strong></span>, {{review.newspaper}}</p>
         </div>
     </div>
 </template>
@@ -47,12 +47,7 @@ export default {
             }
 
             h4 {
-                font-size: 1.5rem;
                 margin-bottom: 1rem;
-            }
-
-            p {
-                color: $gray-text;
             }
         }
 
@@ -63,10 +58,6 @@ export default {
 
             img {
                 margin-right: 30px;
-            }
-
-            .author {
-                color: $gray-text;
             }
         }
     }
