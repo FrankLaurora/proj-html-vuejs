@@ -9,6 +9,7 @@
     <MoreInfo :cardInfo="cardInfo"/>
     <RecentArticles :mainArticle="article_highlight" :articleCards="articleCards"/>
     <Footer :footerAbout="footerAbout" :footerLinks="footerLinks" :footerContacts="footerContacts"/>
+    <ToTopButton />
   </div>
 </template>
 
@@ -21,7 +22,8 @@ import Events from './components/Events.vue';
 import Subscription from './components/Subscription.vue'
 import MoreInfo from './components/MoreInfo.vue';
 import RecentArticles from './components/RecentArticles.vue';
-import Footer from './components/Footer.vue'
+import Footer from './components/Footer.vue';
+import ToTopButton from './components/ToTopButton.vue'
 
 export default {
   components: {
@@ -33,7 +35,8 @@ export default {
     Subscription,
     MoreInfo,
     RecentArticles,
-    Footer
+    Footer,
+    ToTopButton
   },
 
   data() {
@@ -42,31 +45,38 @@ export default {
         menu: [
           {
             link: 'Home',
-            active: true
+            active: true,
+            href: 'home'
           },          
           {
             link: 'About Me',
-            active: false
+            active: false,
+            href: 'about'
           },
           {
             link: 'Testimonials',
-            active: false
+            active: false,
+            href: 'testimonials'
           },
           {
             link: 'My Blog',
-            active: false
+            active: false,
+            href: 'my_blog'
           },
           {
             link: 'Meetups',
-            active: false
+            active: false,
+            href: 'meetups'
           },
           {
             link: 'Shop',
-            active: false
+            active: false,
+            href: 'shop'
           },
           {
             link: 'Contact Me',
-            active: false
+            active: false,
+            href: 'contacts'
           }
         ],
         // about seciton data
@@ -173,11 +183,26 @@ export default {
         footerLinks: {
           title: 'useful links',
           content: [
-            'Latest Books',
-            'Upcoming Events',
-            'Recent Articles',
-            'Business Enquiries',
-            'Visit My Foundation'
+            {
+              link: 'Latest Books',
+              href: 'home'
+            },
+            {
+              link: 'Upcoming Events',
+              href: 'meetups'
+            },
+            {
+              link: 'Recent Articles',
+              href: 'articles'
+            },
+            {            
+              link: 'Business Enquiries',
+              href: 'my_blog'
+            },
+            {            
+              link: 'Visit My Foundation',
+              href: 'contacts'
+            }
           ]
         },
         //footer contacts section
@@ -204,4 +229,3 @@ export default {
 @import './assets/style/common.scss';
 
 </style>
-Footer

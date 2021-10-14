@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+//commons
+* {
+    scroll-behavior: smooth;
+}
 // containers
 .lg_container, .md_lg_container, .md_container, .sm_container {
     margin: auto;

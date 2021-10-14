@@ -1,5 +1,5 @@
 <template>
-    <section class="events">
+    <section class="events" id="meetups">
         <h3 class="dark">Upcoming Events</h3>
         <p class="subtitle highlighted bold_text">Meet the author in person</p>
         <div class="md_container">

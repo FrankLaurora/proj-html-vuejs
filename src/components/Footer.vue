@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer id="contacts">
         <img :src="require('../assets/img/author-logo-round-small.png')" alt="Logo">
         <div class="md_container">
             <div class="col about">
@@ -11,7 +11,7 @@
                 <ul class="fa-ul links">
                     <li class="light" v-for="(element, index) in footerLinks.content" :key="index">
                         <span class="fa-li"><i class="fas fa-angle-right"></i></span>
-                        <a href="#">{{element}}</a>
+                        <a :href="`#${element.href}`">{{element.link}}</a>
                     </li>
                 </ul>
             </div>

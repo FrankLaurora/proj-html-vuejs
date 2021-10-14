@@ -1,5 +1,5 @@
 <template>
-    <section class="about md_container">
+    <section class="about md_container" id="about">
         <h2 class="highlighted">{{about.title}}</h2>
         <p class="big_text">{{about.content}}</p>
         <button class="btn btn_green">Meet the Author</button>

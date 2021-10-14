@@ -1,5 +1,5 @@
 <template>
-    <div class="headerHeroBox">
+    <div class="headerHeroBox" id="home">
         <div>
             <Header :menu="menu" />
             <Hero />

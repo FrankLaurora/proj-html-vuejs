@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="my_blog">
         <div class="sm_container">
             <h3 class="light">Subscribe To My Newsletter</h3>
             <p class="subtitle highlighted bold_text">Be notified about book signing tour dates</p>

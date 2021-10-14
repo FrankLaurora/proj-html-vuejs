@@ -1,5 +1,5 @@
 <template>
-    <section class="reviews md_container">
+    <section class="reviews md_container" id="testimonials">
         <div class="top_bar">
             <div class="title_box">
                 <h3 class="dark">What The Critics Say</h3>

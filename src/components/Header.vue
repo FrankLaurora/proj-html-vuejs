@@ -2,7 +2,7 @@
     <div class="lg_container">
         <img :src="require('../assets/img/author-logo-round-200x205.png')" alt="Logo">
         <ul class="bold_text">
-            <li class="small_text" :class="element.active == true ? 'active' : ''" v-for="(element, index) in menu" :key="index"><a href="#">{{element.link}}</a></li>
+            <li class="small_text" :class="element.active == true ? 'active' : ''" v-for="(element, index) in menu" :key="index"><a :href="`#${element.href}`">{{element.link}}</a></li>
             <li class="small_text"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
     </div>
